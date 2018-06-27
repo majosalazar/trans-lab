@@ -1,6 +1,5 @@
-#login {
-  align-content: center;
-  
+body{
+  text-align: center;
 }
 
 .btn {
@@ -8,7 +7,18 @@
 }
 
 #imgLogo {
-  width: 50px;
+  width: 8em;
+  margin: 1.5em;
 }
 
+#logo {
+  color: #F5A901;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Francois One', sans-serif;
 
+}
+
+#login {
+  background-color: #3E3F41;
+}

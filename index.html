@@ -6,20 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- enlace bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <!-- enlace fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!-- enlace google font -->
+  <link href="https://fonts.googleapis.com/css?family=Anton|Francois+One" rel="stylesheet">
   <!-- enlace local css -->
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 <body>
 
-  <!-- login -->
   <div class="container-fluid">
+    <!-- login -->
     <section id="login">
       <img src="docs/imagen.png" alt="logo-transLab" id="imgLogo">
       <p id="logo">TRANS-LAB</p>
       <form class="px-4 py-3">
         <div class="form-group">
-          <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Correo electrónico">
+          <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Correo electrónico" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)[.][a-zA-Z]{1,5}">
         </div>
         <div class="form-group">
           <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
@@ -27,9 +31,46 @@
         <button type="submit" class="btn">INICIAR SESIÓN</button>
       </form>
       <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">¿NO TIENES CUENTA? REGÍSTRATE</a>
+       <a class="dropdown-item" href="#">¿NO TIENES CUENTA? REGÍSTRATE</a>
     </section>
+
+    <!-- navbar -->
+    <div class="pos-f-t">
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+      
+      <div class="collapse" id="navbarToggleExternalContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ver Saldo</a>
+          </li>
+          <li class="nav-item"> 
+            <a class="nav-link" href="#"> <i class="fa fa-th" aria-hidden="true"></i> Calcular Tarifa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Preguntas Frecuentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <i class="fa fa-long-arrow-left" aria-hidden="true"></i> Home</a>
+          </li>
+
+        </ul>  
+      </div>
+    </div>
+
+    <!-- part 1 -->
+    <section id="ble"></section>
+
+
+      
+        
+      
     
 
   </div>
