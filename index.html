@@ -18,30 +18,26 @@
 
   <div class="container-fluid">
     <!-- login -->
-    <div class="row">
-      <section id="login">
-        <img src="docs/imagen.png" alt="logo-transLab" id="imgLogo">
-        <p id="logo">TRANS-LAB</p>
-        <form class="px-4 py-3">
-          <div class="form-group">
-            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Correo electrónico" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)[.][a-zA-Z]{1,5}">
-          </div>
-          <div class="form-group">
-            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
-          </div>
-          <button type="submit" class="btn">INICIAR SESIÓN</button>
-        </form>
-        <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
-        <a class="dropdown-item" href="#">¿NO TIENES CUENTA? REGÍSTRATE</a>
-      </section>
-    </div>
+    <section id="login">
+      <img src="docs/imagen.png" alt="logo-transLab" id="imgLogo">
+      <p id="logo">TRANS-LAB</p>
+      <form class="px-4 py-3">
+        <div class="form-group">
+          <input type="email" class="form-control" id="inputEmail" placeholder="Correo electrónico" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)[.][a-zA-Z]{1,5}">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="inputPass" placeholder="Contraseña">
+        </div>
+        <button type="submit" class="btn" id="btnLoginIn">INICIAR SESIÓN</button>
+      </form>
+      <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
+      <a class="dropdown-item" href="#">¿NO TIENES CUENTA? REGÍSTRATE</a>
+      <div id="passError"></div>
+    </section>
+    
 
     <!-- navbar -->
-    <div style="display:none;">
-
-    </div>
-
-    <div class="pos-f-t" id="navbar">
+      <div class="pos-f-t" id="navbar" style="display:none;">
       <nav class="navbar navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -58,10 +54,7 @@
       </div>
     </div>
     <!-- 1ra pantalla -->
-    <div style="display:none;">
-
-    </div>
-    <div id = "home">
+      <div id = "home" style="display:none;">
       <div class="btnBox">
         <a href="" id="btn1">VER SALDO </a>
       </div>
