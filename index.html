@@ -26,9 +26,13 @@
           <input type="email" class="form-control" id="inputEmail" placeholder="Correo electrónico" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)[.][a-zA-Z]{1,5}">
         </div>
         <div class="form-group">
-          <input type="password" class="form-control" id="inputPass" placeholder="Contraseña">
+          <input type="password" class="form-control" id="inputPass" placeholder="Contraseña" pattern="[0-9]"
         </div>
         <button type="submit" class="btn" id="btnLoginIn">INICIAR SESIÓN</button>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+        </div>
       </form>
       <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
       <a class="dropdown-item" href="#">¿NO TIENES CUENTA? REGÍSTRATE</a>
@@ -37,7 +41,7 @@
     
 
     <!-- navbar -->
-      <div class="pos-f-t" id="navbar" style="display:none;">
+      <div class="pos-f-t" id="navbar" style="display:block;">
       <nav class="navbar navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -54,7 +58,7 @@
       </div>
     </div>
     <!-- 1ra pantalla -->
-      <div id = "home" style="display:none;">
+    <div id = "home" style="display:block;">
       <div class="btnBox">
         <a href="" id="btn1">VER SALDO </a>
       </div>
@@ -68,22 +72,61 @@
         <a href="" id="btn4">PREGUNTAS FRECUENTES </a>
       </div>
     </div>
+    <!-- 2da pantalla / perfil -->
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-8">
+        <!-- img perfil -->
+        <div id="boxImg">
+          <img src="" alt="imagen de perfil">
+        </div>
+        <div id="boxEmail"></div>
+        <input type="number" id="targetNumber" placeholder="Número de Tarjeta">
+        <button id="btnEnter">AGREGAR TARJETA</button>
+        <div id="printNumberTarget"></div>
+      </div>
+      <div class="col"></div>
+    </div>
 
-
+    <!-- 2da pantalla -->
+    <div id="" style="display:block;">
+      <input type="number" id="targetNumber" placeholder="Número de Tarjeta">
+      <div class="row">
+        <div class="col-6">
+          <p>Tarifa</p>
+          <select class="form-control form-control-sm">
+            <option>Small select</option>
+            <option>Small select</option>
+            <option>Small select</option>
+          </select>  
+        </div>  
+        <div class="col-6">
+          <p>Tarjeta</p>
+          <select class="form-control form-control-sm">
+              <option>Small select</option>
+              <option>Small select</option>
+              <option>Small select</option>
+        </div>      
+        <!-- boton calcular -->
+        <button id="btnCalculate">CALCULAR</button>
+        <!-- visualizador  -->
+        <div class="row">
+          <div class="col-"></div>
+          <div class="col-8" id="printData" style="display:block;">
+            <div id="printTarifa"></div>
+            <div id="printTarjeta"></div>
+          </div>
+          <div class="col-"></div>
+        </div>
+      </div>
+    </div>
    
-
-     
-
-
-
-    <!-- part 1 -->
-    <section id="ble"></section>
-
-
+    <!-- preguntas frecuentes -->
+    <div id="title">Preguntas Frecuentes</div>
+    <div id="preguntasFrecuentes">
       
-        
-      
-    
+    </div>
+
 
   </div>
   <!-- enlaces bootstrap -->
